@@ -1,0 +1,43 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f0f0f0; /* Light grey background */
+  box-shadow: 8px 8px 16px #d1d1d1, /* Darker shadow on one side */
+              -8px -8px 16px #ffffff; /* Lighter shadow on the other side */
+  width: 80%;
+  height: auto;
+}
+
+.todo-item-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-item-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0; /* Same as the background */
+  box-shadow: 5px 5px 10px #d1d1d1, /* Same shadows as the container */
+              -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todo-item-buttons button:hover {
+  box-shadow: 3px 3px 6px #d1d1d1, 
+              -3px -3px 6px #ffffff;
+}
+
+.todo-item-buttons button:active {
+  box-shadow: none;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #999; /* Light grey text for completed tasks */
+}
